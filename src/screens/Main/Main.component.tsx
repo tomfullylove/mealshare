@@ -1,7 +1,8 @@
 import React from 'react';
+import {View} from './assets/styles';
 
 const Main: React.FC = () => {
-  return <></>;
+  return <View />;
 };
 
 export default Main;
