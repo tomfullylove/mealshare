@@ -1,8 +1,17 @@
 import React from 'react';
-import {View} from './assets/styles';
+import PageContainer from '../../components/atoms/PageContainer';
+import AltButton from '../../components/atoms/AltButton';
+
+import {Container} from './assets/styles';
 
 const Main: React.FC = () => {
-  return <View />;
+  return (
+    <PageContainer>
+      <Container>
+        <AltButton onPress={(): void => {}} text="Filters" />
+      </Container>
+    </PageContainer>
+  );
 };
 
 export default Main;
