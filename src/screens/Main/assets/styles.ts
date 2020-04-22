@@ -11,10 +11,15 @@ export const Spacer = Styled.View`
 `;
 
 export const LocationContainer = Styled.View`
-  margin: 12px 0 0 14px;
+  margin: 12px 0 12px 14px;
+`;
+
+export const ScrollContainer = Styled.ScrollView`
+  display: flex;
+  flex-direction: column;
 `;
 
 export const Title = Styled.Text`
-  margin: 12px 0;
+  margin-bottom: 12px;
   font-size: 16px;
 `;
