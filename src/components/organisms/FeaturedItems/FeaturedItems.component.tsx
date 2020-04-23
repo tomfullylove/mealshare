@@ -15,7 +15,7 @@ const FeaturedItems: React.FC = () => {
       />
       <LargeListItem
         name="Raspberry Cheesecake"
-        cuisine="Desert"
+        cuisine="Dessert"
         rating={4}
         price={3}
         distance={1}

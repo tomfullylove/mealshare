@@ -1,6 +1,6 @@
 import Styled from 'styled-components/native';
 
-export const Container = Styled.View`
+export const TopContainer = Styled.View`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -23,4 +23,8 @@ export const ScrollContainer = Styled.ScrollView`
 export const Title = Styled.Text`
   margin: 0 16px 12px;
   font-size: 16px;
+`;
+
+export const Container = Styled.View`
+  padding: 0 14px 16px;;
 `;

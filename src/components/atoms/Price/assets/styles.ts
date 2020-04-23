@@ -1,5 +1,9 @@
 import Styled from 'styled-components/native';
 
-export const Text = Styled.Text`
-  font-size: 22px;
+interface TextProps {
+  textSize: number;
+}
+
+export const Text = Styled.Text<TextProps>`
+  font-size: ${({textSize}): number => textSize}px;
 `;

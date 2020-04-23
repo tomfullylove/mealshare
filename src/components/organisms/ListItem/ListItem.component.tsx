@@ -17,15 +17,15 @@ import {
 interface Props {
   name: string;
   rating: number;
-  cuisine: string;
+  portions: number;
   price: number;
   distance: number;
 }
 
-const LargeListItem: React.FC<Props> = ({
+const ListItem: React.FC<Props> = ({
   name,
   rating,
-  cuisine,
+  portions,
   price,
   distance,
 }) => {
@@ -37,11 +37,11 @@ const LargeListItem: React.FC<Props> = ({
           <Title>{name}</Title>
           <RowContainer>
             <StarRating rating={rating} />
-            <Text>{cuisine}</Text>
+            <Text>{portions} portions left</Text>
           </RowContainer>
         </LeftContainer>
         <RightContainer>
-          <Price textSize={22} price={price} />
+          <Price textSize={20} price={price} />
           <UserDistance distance={distance} />
         </RightContainer>
       </BottomContainer>
@@ -49,4 +49,4 @@ const LargeListItem: React.FC<Props> = ({
   );
 };
 
-export default LargeListItem;
+export default ListItem;
