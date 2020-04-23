@@ -4,6 +4,7 @@ export const Container = Styled.View`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 0 16px;
 `;
 
 export const Spacer = Styled.View`
@@ -11,7 +12,7 @@ export const Spacer = Styled.View`
 `;
 
 export const LocationContainer = Styled.View`
-  margin: 12px 0 12px 14px;
+  margin: 12px 0 12px 24px;
 `;
 
 export const ScrollContainer = Styled.ScrollView`
@@ -20,6 +21,6 @@ export const ScrollContainer = Styled.ScrollView`
 `;
 
 export const Title = Styled.Text`
-  margin-bottom: 12px;
+  margin: 0 16px 12px;
   font-size: 16px;
 `;
