@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AltButton renders correctly for one error 1`] = `
+<Styled(Component)
+  onPress={[MockFunction]}
+>
+  <Styled(Text)>
+    Press Me
+  </Styled(Text)>
+</Styled(Component)>
+`;

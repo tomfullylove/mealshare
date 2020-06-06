@@ -12,9 +12,16 @@
   "dependencies": {
     "@react-navigation/bottom-tabs": "^5.2.7",
     "@react-navigation/native": "^5.1.6",
+    "@types/enzyme": "^3.10.5",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/jsdom": "^16.2.3",
     "@types/react-redux": "^7.1.9",
     "@types/redux-saga-tester": "^1.0.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.5.0",
     "react": "16.11.0",
+    "react-dom": "^16.13.1",
     "react-native": "0.62.2",
     "react-native-safe-area-context": "^0.7.3",
     "react-native-screens": "^2.5.0",
@@ -38,13 +45,14 @@
     "@typescript-eslint/parser": "^2.27.0",
     "babel-jest": "^24.9.0",
     "eslint": "^6.5.1",
-    "jest": "^24.9.0",
+    "jest": "^26.0.1",
     "metro-react-native-babel-preset": "^0.58.0",
-    "prettier": "^2.0.4",
+    "prettier": "^2.0.5",
     "react-test-renderer": "16.11.0",
     "typescript": "^3.8.3"
   },
   "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/test-setup.js",
     "preset": "react-native",
     "moduleFileExtensions": [
       "ts",
