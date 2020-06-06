@@ -4,8 +4,8 @@ import PageContainer from '../../components/atoms/PageContainer';
 import InputDisplay from '../../components/molecules/InputDisplay';
 import AltButton from '../../components/atoms/AltButton';
 import IconText from '../../components/atoms/IconText';
-import FeaturedItems from '../../components/organisms/FeaturedItems';
-import AllItems from '../../components/organisms/AllItems';
+import FeaturedItems from '../../components/templates/FeaturedItems';
+import AllItems from '../../components/templates/AllItems';
 
 import IconCalendar from '../../assets/icon-calendar.png';
 import IconLocCurrent from '../../assets/icon-location-current.png';
