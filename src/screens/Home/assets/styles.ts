@@ -8,7 +8,7 @@ export const TopContainer = Styled.View`
 `;
 
 export const Spacer = Styled.View`
-  width: 8px;
+  width: 16px;
 `;
 
 export const LocationContainer = Styled.View`

@@ -31,7 +31,7 @@ const LargeListItem: React.FC<Props> = ({
 }) => {
   return (
     <Container>
-      <Image />
+      <Image source={require('../../../assets/food2.jpg')} />
       <BottomContainer>
         <LeftContainer>
           <Title>{name}</Title>

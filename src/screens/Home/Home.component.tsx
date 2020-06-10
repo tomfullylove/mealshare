@@ -8,7 +8,6 @@ import FeaturedItems from '../../components/templates/FeaturedItems';
 import AllItems from '../../components/templates/AllItems';
 
 import IconCalendar from '../../assets/icon-calendar.png';
-import IconLocCurrent from '../../assets/icon-location-current.png';
 import IconLocPin from '../../assets/icon-location-pin.png';
 
 import {
@@ -24,9 +23,7 @@ const Home: React.FC = () => {
   return (
     <PageContainer>
       <TopContainer>
-        <InputDisplay icon={IconCalendar} text="13:00, 13th Dec" />
-        <Spacer />
-        <InputDisplay icon={IconLocCurrent} text="4 km" />
+        <InputDisplay icon={IconCalendar} text="5pm - 7pm" subtext="Today" />
         <Spacer />
         <AltButton onPress={(): void => {}} text="Filters" />
       </TopContainer>

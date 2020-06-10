@@ -7,7 +7,7 @@ export const Container = Styled.TouchableOpacity`
   margin-right: 24px;
 `;
 
-export const Image = Styled.View`
+export const Image = Styled.Image`
   width: 250px;
   height: 135px;
   border-radius: 15px;

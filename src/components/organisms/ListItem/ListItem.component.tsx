@@ -31,7 +31,7 @@ const ListItem: React.FC<Props> = ({
 }) => {
   return (
     <Container>
-      <Image />
+      <Image source={require('../../../assets/food.jpg')} />
       <BottomContainer>
         <LeftContainer>
           <Title>{name}</Title>
