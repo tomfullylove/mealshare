@@ -4,14 +4,15 @@ import colors from '../../../../utils/colors';
 export const Container = Styled.TouchableOpacity`
   display: flex;
   flex-direction: column;
-  margin-top: 12px;
+  margin-bottom: 20px;
 `;
 
 export const Image = Styled.Image`
   width: 100%;
-  height: 140px;
-  border-radius: 6px;
+  height: 150px;
   background-color: #9991;
+  borderTopLeftRadius: 6px;
+  borderTopRightRadius: 6px;
 `;
 
 export const BottomContainer = Styled.View`

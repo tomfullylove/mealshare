@@ -8,7 +8,7 @@ import FeaturedItems from '../../components/templates/FeaturedItems';
 import AllItems from '../../components/templates/AllItems';
 
 import IconCalendar from '../../assets/icon-calendar.png';
-import IconLocPin from '../../assets/icon-location-pin.png';
+import IconLoc from '../../assets/icon-location.png';
 
 import {
   TopContainer,
@@ -28,7 +28,7 @@ const Home: React.FC = () => {
         <AltButton onPress={(): void => {}} text="Filters" />
       </TopContainer>
       <LocationContainer>
-        <IconText icon={IconLocPin} text="Ninian Road Cardiff" />
+        <IconText icon={IconLoc} text="Ninian Road Cardiff" />
       </LocationContainer>
       <ScrollContainer
         refreshControl={
