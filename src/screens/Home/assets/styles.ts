@@ -4,7 +4,7 @@ export const TopContainer = Styled.View`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 16px;
+  padding: 20px 16px 0;
 `;
 
 export const Spacer = Styled.View`

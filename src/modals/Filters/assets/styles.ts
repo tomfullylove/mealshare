@@ -13,7 +13,7 @@ export const Container = Styled.View`
   borderTopLeftRadius: 17px;
   borderTopRightRadius: 17px;
   background-color: ${colors.background};
-  height: 90%;
+  height: 88%;
 `;
 
 export const TopContainer = Styled.View`
@@ -37,5 +37,5 @@ export const BottomContainer = Styled.View`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 16px;
+  padding: 16px;
 `;

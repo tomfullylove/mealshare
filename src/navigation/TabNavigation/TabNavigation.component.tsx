@@ -11,7 +11,12 @@ const Tab = createBottomTabNavigator();
 const TabNavigation: React.FC = () => {
   return (
     <NavigationContainer>
-      <Tab.Navigator>
+      <Tab.Navigator
+        tabBarOptions={{
+          labelStyle: {
+            paddingBottom: 4,
+          },
+        }}>
         <Tab.Screen name="Home" component={Home} />
         <Tab.Screen name="Orders" component={Orders} />
         <Tab.Screen name="Selling" component={Selling} />
