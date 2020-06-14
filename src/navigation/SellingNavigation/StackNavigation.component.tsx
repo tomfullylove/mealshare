@@ -3,7 +3,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 
 import colors from '../../utils/colors';
 
-import Selling from '../../screens/Filters';
+import Selling from '../../screens/Generic';
 
 const Stack = createStackNavigator();
 

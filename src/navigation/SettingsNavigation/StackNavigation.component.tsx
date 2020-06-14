@@ -3,7 +3,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 
 import colors from '../../utils/colors';
 
-import Settings from '../../screens/Filters';
+import Settings from '../../screens/Generic';
 
 const Stack = createStackNavigator();
 
