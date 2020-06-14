@@ -4,7 +4,6 @@ import {createStackNavigator} from '@react-navigation/stack';
 import colors from '../../utils/colors';
 
 import Home from '../../screens/Home';
-import Filters from '../../screens/Filters';
 
 const Stack = createStackNavigator();
 
@@ -17,7 +16,6 @@ const StackbNavigator: React.FC = () => {
         },
       }}>
       <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="Filters" component={Filters} />
     </Stack.Navigator>
   );
 };
