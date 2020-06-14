@@ -6,7 +6,6 @@ import PageContainer from '../../components/atoms/PageContainer';
 import InputDisplay from '../../components/molecules/InputDisplay';
 import AltButton from '../../components/atoms/AltButton';
 import IconText from '../../components/atoms/IconText';
-import FeaturedItems from '../../components/templates/FeaturedItems';
 import AllItems from '../../components/templates/AllItems';
 import FilterModal from '../../modals/Filters';
 
@@ -18,7 +17,6 @@ import {
   Spacer,
   LocationContainer,
   ScrollContainer,
-  Title,
   Container,
 } from './assets/styles';
 
@@ -45,9 +43,6 @@ const Home: React.FC = () => {
           refreshControl={
             <RefreshControl refreshing={false} onRefresh={(): void => {}} />
           }>
-          <Title>Recommended for you</Title>
-          <FeaturedItems />
-          <Title>All meals</Title>
           <Container>
             <AllItems />
           </Container>

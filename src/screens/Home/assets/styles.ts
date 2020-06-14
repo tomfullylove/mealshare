@@ -20,12 +20,6 @@ export const ScrollContainer = Styled.ScrollView`
   flex-direction: column;
 `;
 
-export const Title = Styled.Text`
-  font-weight: 500;
-  margin: 0 16px 12px;
-  font-size: 16px;
-`;
-
 export const Container = Styled.View`
   padding: 0 14px;
 `;
