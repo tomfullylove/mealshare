@@ -1,5 +1,5 @@
 import React from 'react';
-import LargeListItem from '../../organisms/LargeListItem';
+import LargeListItem from '../../../organisms/LargeListItem';
 
 import {ScrollContainer} from './assets/styles';
 

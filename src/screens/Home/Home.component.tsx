@@ -6,7 +6,7 @@ import PageContainer from '../../components/atoms/PageContainer';
 import InputDisplay from '../../components/molecules/InputDisplay';
 import AltButton from '../../components/atoms/AltButton';
 import IconText from '../../components/atoms/IconText';
-import AllItems from '../../components/templates/AllItems';
+import AllItems from '../../components/templates/lists/AllItems';
 import FilterModal from '../../modals/Filters';
 
 import IconCalendar from '../../assets/icon-calendar.png';

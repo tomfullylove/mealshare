@@ -1,5 +1,5 @@
 import React from 'react';
-import ListItem from '../../organisms/ListItem';
+import ListItem from '../../../organisms/ListItem';
 
 import {Container} from './assets/styles';
 
