@@ -73,19 +73,30 @@ const Filters: React.FC<Props> = ({visible, close}) => {
               <CheckButtonGroup items={cuisines} />
             </FieldContainer>
             <FieldContainer>
-              <FieldTitle>Allergens</FieldTitle>
-              <CheckButtonGroup items={allergens} />
-            </FieldContainer>
-            <FieldContainer>
-              <FieldTitle>Max Price</FieldTitle>
+              <FieldTitle>Price</FieldTitle>
               {/* TODO: disable scroll when slider is active */}
               <Slider
                 // eslint-disable-next-line react-native/no-inline-styles
                 style={{marginLeft: 6, marginRight: 6}}
                 value={8}
-                minimumValue={0}
+                minimumValue={1}
                 maximumValue={8}
               />
+            </FieldContainer>
+            <FieldContainer>
+              <FieldTitle>Portions</FieldTitle>
+              {/* TODO: disable scroll when slider is active */}
+              <Slider
+                // eslint-disable-next-line react-native/no-inline-styles
+                style={{marginLeft: 6, marginRight: 6}}
+                value={1}
+                minimumValue={1}
+                maximumValue={8}
+              />
+            </FieldContainer>
+            <FieldContainer>
+              <FieldTitle>Allergens</FieldTitle>
+              <CheckButtonGroup items={allergens} />
             </FieldContainer>
           </ScrollContainer>
           <BottomContainer>

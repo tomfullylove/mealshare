@@ -13,7 +13,7 @@ export const Container = Styled.View`
   borderTopLeftRadius: 17px;
   borderTopRightRadius: 17px;
   background-color: ${colors.background};
-  height: 88%;
+  height: 100%;
 `;
 
 export const TopContainer = Styled.View`
