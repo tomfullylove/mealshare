@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Modal} from 'react-native';
+import Modal from 'react-native-modal';
 import Slider from '@react-native-community/slider';
 
 import Button from '../../components/atoms/Button';
@@ -56,8 +56,15 @@ interface Props {
 
 const Filters: React.FC<Props> = ({visible, close}) => {
   return (
-    // TODO: add background to modal
-    <Modal visible={visible} animationType="slide" transparent>
+    <Modal 
+      isVisible={visible} 
+      propagateSwipe
+      style={{
+        marginBottom: 0,
+        marginLeft: 0,
+        marginRight: 0,
+      }}
+    >
       <SafeArea>
         <Container>
           <TopContainer>

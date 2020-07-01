@@ -7,10 +7,10 @@ export const Container = Styled.TouchableOpacity`
   justify-content: flex-start;
   align-items: center;
   flex-grow: 1;
-  height: 48px;
-  padding: 0 16px;
+  height: 40px;
+  padding: 0 18px 0 16px;
   background-color: ${colors.white};
-  border-radius: 17px;
+  border-radius: 20px;
   shadow-color: ${colors.shadow};
   shadow-offset: 0px 0px;
   shadow-opacity: 1;

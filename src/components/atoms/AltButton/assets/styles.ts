@@ -12,13 +12,14 @@ export const Container = Styled.TouchableOpacity<StyledProps>`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: ${({small}): number => (small ? 32 : 48)}px;
-  border: 1px solid ${({alt}) => (alt ? colors.lightGrey : colors.black)};
-  border-radius: 24px;
-  padding: 0 24px;
+  height: ${({small}): number => (small ? 32 : 40)}px;
+  border: 1px solid ${({alt}) => (alt ? colors.black : colors.black)};
+  border-radius: 20px;
+  padding: 0 ${({small}): number => (small ? 16 : 20)}px;
 `;
 
 export const Text = Styled.Text<StyledProps>`
-  font-size: ${({small}): number => (small ? 12 : 16)}px;
-  color: ${({alt}) => (alt ? colors.grey : colors.black)};
+  font-size: ${({small}): number => (small ? 12 : 14)}px;
+  color: ${({alt}) => (alt ? colors.black : colors.black)};
+  font-weight: ${({small}): number => (small ? 400 :500)};
 `;
