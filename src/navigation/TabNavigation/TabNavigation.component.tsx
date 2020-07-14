@@ -13,9 +13,7 @@ const TabNavigation: React.FC = () => {
     <NavigationContainer>
       <Tab.Navigator
         tabBarOptions={{
-          labelStyle: {
-            paddingBottom: 4,
-          },
+          labelStyle: {},
         }}>
         <Tab.Screen name="Home" component={Home} />
         <Tab.Screen name="Orders" component={Orders} />

@@ -8,7 +8,7 @@ import AltButton from '../../components/atoms/AltButton';
 import CheckButtonGroup from '../../components/molecules/CheckButtonGroup';
 
 import {
-  SafeArea,
+  Wrapper,
   Container,
   Title,
   TopContainer,
@@ -65,7 +65,7 @@ const Filters: React.FC<Props> = ({visible, close}) => {
         marginRight: 0,
       }}
     >
-      <SafeArea>
+      <Wrapper>
         <Container>
           <TopContainer>
             <Title>Filters</Title>
@@ -111,7 +111,7 @@ const Filters: React.FC<Props> = ({visible, close}) => {
             <Button onPress={close} text="Show Results" />
           </BottomContainer>
         </Container>
-      </SafeArea>
+      </Wrapper>
     </Modal>
   );
 };

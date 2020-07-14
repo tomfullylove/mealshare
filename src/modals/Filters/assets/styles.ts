@@ -2,7 +2,7 @@ import Styled from 'styled-components/native';
 
 import colors from '../../../utils/colors';
 
-export const SafeArea = Styled.SafeAreaView`
+export const Wrapper = Styled.View`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -13,7 +13,7 @@ export const Container = Styled.View`
   borderTopLeftRadius: 17px;
   borderTopRightRadius: 17px;
   background-color: ${colors.background};
-  height: 100%;
+  height: 90%;
 `;
 
 export const TopContainer = Styled.View`
