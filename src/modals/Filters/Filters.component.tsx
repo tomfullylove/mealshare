@@ -6,6 +6,7 @@ import Slider from '@react-native-community/slider';
 import Button from '../../components/atoms/Button';
 import AltButton from '../../components/atoms/AltButton';
 import CheckButtonGroup from '../../components/molecules/CheckButtonGroup';
+import TabSelector from '../../components/molecules/TabSelector';
 
 import {
   Wrapper,
@@ -80,26 +81,12 @@ const Filters: React.FC<Props> = ({visible, close}) => {
               <CheckButtonGroup items={cuisines} />
             </FieldContainer>
             <FieldContainer>
-              <FieldTitle>Price</FieldTitle>
-              {/* TODO: disable scroll when slider is active */}
-              <Slider
-                // eslint-disable-next-line react-native/no-inline-styles
-                style={{marginLeft: 6, marginRight: 6}}
-                value={8}
-                minimumValue={1}
-                maximumValue={8}
-              />
+              <FieldTitle>Maximum Price</FieldTitle>
+              <TabSelector />
             </FieldContainer>
             <FieldContainer>
-              <FieldTitle>Portions</FieldTitle>
-              {/* TODO: disable scroll when slider is active */}
-              <Slider
-                // eslint-disable-next-line react-native/no-inline-styles
-                style={{marginLeft: 6, marginRight: 6}}
-                value={1}
-                minimumValue={1}
-                maximumValue={8}
-              />
+              <FieldTitle>Minimum Portions</FieldTitle>
+              <TabSelector />
             </FieldContainer>
             <FieldContainer>
               <FieldTitle>Allergens</FieldTitle>
@@ -107,7 +94,7 @@ const Filters: React.FC<Props> = ({visible, close}) => {
             </FieldContainer>
           </ScrollContainer>
           <BottomContainer>
-            <AltButton onPress={() => {}} text="Clear" alt />
+            <AltButton onPress={() => {}} text="Clear" />
             <Button onPress={close} text="Show Results" />
           </BottomContainer>
         </Container>

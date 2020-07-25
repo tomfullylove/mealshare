@@ -7,13 +7,16 @@ export const Container = Styled.TouchableOpacity`
   align-items: center;
   justify-content: center;
   height: 40px;
-  background-color: ${colors.black};
+  background-color: ${colors.main};
   border-radius: 20px;
   padding: 0 20px;
+  shadow-color: ${colors.shadow};
+  shadow-offset: 0px 2px;
+  shadow-opacity: 1;
 `;
 
 export const Text = Styled.Text`
   font-size: 14px;
   color: ${colors.white};
-  font-weight: 500;
+  font-weight: 600;
 `;

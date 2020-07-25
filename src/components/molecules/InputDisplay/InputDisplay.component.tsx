@@ -1,10 +1,11 @@
 import React from 'react';
 
 import {Container, Icon, Text, Subtext} from './assets/styles';
+import { ImageSourcePropType } from 'react-native';
 
 interface Props {
   onPress: () => void;
-  icon: string;
+  icon: ImageSourcePropType;
   subtext: string;
   text: string;
 }

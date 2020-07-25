@@ -20,7 +20,6 @@ const CheckButtonGroup: React.FC<Props> = ({items}) => {
         <ItemContainer key={item.id}>
           <AltButton
             id={item.id}
-            alt
             small
             onPress={() => {}}
             text={item.text}

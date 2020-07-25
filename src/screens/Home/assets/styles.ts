@@ -1,28 +1,36 @@
 import Styled from 'styled-components/native';
 
+export const Container = Styled.SafeAreaView`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+`;
+
 export const TopContainer = Styled.View`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px 16px;
+  padding: 8px 16px 20px;
 `;
 
 export const Spacer = Styled.View`
   width: 16px;
 `;
 
-export const ScrollContainer = Styled.ScrollView`
-  display: flex;
-  flex-direction: column;
-`;
-
-export const Container = Styled.View`
-  padding: 0 14px;
+export const MapContainer = Styled.View`
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 `;
 
 export const BottomContainer = Styled.View`
-  position: absolute;
-  bottom: 0;
   display: flex;
   flex-direction: column;
   padding: 8px;
@@ -32,6 +40,6 @@ export const BottomContainer = Styled.View`
 export const LocationContainer = Styled.View`
   max-width: 80%;
   height: 40px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   align-self: center;
 `;

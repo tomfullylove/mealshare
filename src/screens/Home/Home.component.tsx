@@ -1,25 +1,22 @@
 import React, {useState} from 'react';
 
-import {RefreshControl} from 'react-native';
+import MapView from 'react-native-maps';
 
 import PageContainer from '../../components/atoms/PageContainer';
 import InputDisplay from '../../components/molecules/InputDisplay';
 import Button from '../../components/atoms/Button';
-import IconText from '../../components/atoms/IconText';
-import AllItems from '../../components/templates/lists/AllItems';
 import FilterModal from '../../modals/Filters';
 import DateTimeModal from '../../modals/DateTime';
 import LocationModal from '../../modals/DateTime';
-import TabSelector from '../../components/molecules/TabSelector';
 
 import IconDate from '../../assets/icon-date.png';
 import IconLoc from '../../assets/icon-location.png';
 
 import {
+  Container,
   TopContainer,
   Spacer,
-  ScrollContainer,
-  Container,
+  MapContainer,
   BottomContainer,
   LocationContainer,
 } from './assets/styles';
@@ -30,7 +27,22 @@ const Home: React.FC = () => {
   const [locationVisible, showLocationModal] = useState(false);
   return (
     <>
-      <PageContainer>
+      <Container>
+        <MapView 
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+          }}
+          initialRegion={{
+            latitude: 51.492130,
+            longitude: -3.164290,
+            latitudeDelta: 0.01,
+            longitudeDelta: 0.01,
+          }}
+        />
         <TopContainer>
           <InputDisplay 
             icon={IconDate} 
@@ -48,14 +60,6 @@ const Home: React.FC = () => {
             text="Filters"
           />
         </TopContainer>
-        <ScrollContainer
-          refreshControl={
-            <RefreshControl refreshing={false} onRefresh={(): void => {}} />
-          }>
-          <Container>
-            <AllItems />
-          </Container>
-        </ScrollContainer>
         <BottomContainer>
           <LocationContainer>
             <InputDisplay 
@@ -67,9 +71,8 @@ const Home: React.FC = () => {
                 }}
             />
           </LocationContainer>
-          <TabSelector />
         </BottomContainer>
-      </PageContainer>
+      </Container>
       <FilterModal visible={filtersVisible} close={() => showFiltersModal(false)} />
       <DateTimeModal visible={dateTimeVisible} close={() => showDateTimeModal(false)} />
       <LocationModal visible={locationVisible} close={() => showLocationModal(false)} />

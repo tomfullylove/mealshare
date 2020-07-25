@@ -11,26 +11,23 @@ export const Container = Styled.View`
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
-  height: 46px;
-  padding: 8px;
-  background-color: ${colors.black};
+  height: 38px;
+  padding: 4px;
+  background-color: ${colors.lighterGrey}
   border-radius: 20px;
-  shadow-color: ${colors.shadow};
-  shadow-offset: 0px 0px;
-  shadow-opacity: 1;
 `;
 
 export const SelectedContainer = Styled.View`
-  padding-top: 6px;
+  padding-top: 8px;
   flex-grow: 1;
-  background-color: ${colors.white};
+  background-color: ${colors.white}
   border-radius: 16px;
 `;
 
 export const Text = Styled.Text<TextProps>`
   text-align: center;
   flex-grow: 1
-  font-size: 14px;
-  color: ${({selected}): string => selected ? colors.black : colors.white};
+  font-size: 12px;
+  color: ${({selected}): string => selected ? colors.black : colors.black};
   font-weight: 500;
 `;
