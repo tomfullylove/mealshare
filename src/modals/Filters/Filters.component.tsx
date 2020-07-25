@@ -83,11 +83,11 @@ const Filters: React.FC<Props> = ({visible, close}) => {
               <CheckButtonGroup items={cuisines} />
             </FieldContainer>
             <FieldContainer>
-              <FieldTitle>Maximum Price</FieldTitle>
+              <FieldTitle>Price</FieldTitle>
               <TabSelector />
             </FieldContainer>
             <FieldContainer>
-              <FieldTitle>Minimum Portions</FieldTitle>
+              <FieldTitle>Portions</FieldTitle>
               <TabSelector />
             </FieldContainer>
             <FieldContainer>

@@ -3,10 +3,14 @@ import Styled from 'styled-components/native';
 import colors from '../../../utils/colors';
 
 export const Container = Styled.View`
-  borderTopLeftRadius: 17px;
-  borderTopRightRadius: 17px;
-  borderBottomLeftRadius: 17px;
-  borderBottomRightRadius: 17px;
+  border-radius: 17px;
   background-color: ${colors.background};
-  height: 50%;
+  height: 60%;
+`;
+
+export const TopContainer = Styled.View`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 12px 8px; 
 `;
