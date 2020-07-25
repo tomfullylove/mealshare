@@ -3,18 +3,25 @@ import colors from '../../../../utils/colors';
 
 interface StyledProps {
   id?: string;
+  active?: boolean;
   small?: boolean;
 }
 
 export const Container = Styled.TouchableOpacity<StyledProps>`
+  background-color: ${colors.lighterGrey}
+  border-radius: 20px;
+  padding: 4px;
+`;
+
+export const SelectedContainer = Styled.TouchableOpacity<StyledProps>`
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: ${({small}): number => (small ? 32 : 40)}px;
-  background-color: ${colors.lighterGrey}
-  border-radius: 20px;
   padding: 0 ${({small}): number => (small ? 16 : 20)}px;
+  background-color: ${({active}): string => (active ? colors.white : colors.lighterGrey)};
+  border-radius: 20px;
+  height: ${({small}): number => (small ? 24 : 32)}px;
 `;
 
 export const Text = Styled.Text<StyledProps>`

@@ -1,11 +1,13 @@
 import React from 'react';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
-import {Container, Icon, Text, Subtext} from './assets/styles';
-import { ImageSourcePropType } from 'react-native';
+import colors from '../../../utils/colors';
+
+import {Container, Text, Subtext} from './assets/styles';
 
 interface Props {
   onPress: () => void;
-  icon: ImageSourcePropType;
+  icon: string;
   subtext: string;
   text: string;
 }
@@ -13,7 +15,7 @@ interface Props {
 const InputDisplay: React.FC<Props> = ({onPress, icon, text, subtext}) => {
   return (
     <Container onPress={onPress}>
-      <Icon source={icon} />
+      <Ionicons name={icon} color={colors.main} size={18} />
       <Text>{text}</Text>
       <Subtext>{subtext}</Subtext>
     </Container>

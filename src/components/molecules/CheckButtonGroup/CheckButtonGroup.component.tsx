@@ -23,6 +23,7 @@ const CheckButtonGroup: React.FC<Props> = ({items}) => {
             small
             onPress={() => {}}
             text={item.text}
+            active={index == 3 || index == 4 || index == 1 || index == 10 || index == 11}
           />
           {index !== items.length && <Spacer />}
         </ItemContainer>

@@ -2,21 +2,16 @@ import React, {useState} from 'react';
 
 import MapView from 'react-native-maps';
 
-import PageContainer from '../../components/atoms/PageContainer';
 import InputDisplay from '../../components/molecules/InputDisplay';
 import Button from '../../components/atoms/Button';
 import FilterModal from '../../modals/Filters';
 import DateTimeModal from '../../modals/DateTime';
 import LocationModal from '../../modals/DateTime';
 
-import IconDate from '../../assets/icon-date.png';
-import IconLoc from '../../assets/icon-location.png';
-
 import {
   Container,
   TopContainer,
   Spacer,
-  MapContainer,
   BottomContainer,
   LocationContainer,
 } from './assets/styles';
@@ -45,7 +40,7 @@ const Home: React.FC = () => {
         />
         <TopContainer>
           <InputDisplay 
-            icon={IconDate} 
+            icon="calendar-outline"
             text="5pm - 7pm" 
             subtext="Today" 
             onPress={(): void => {
@@ -63,7 +58,7 @@ const Home: React.FC = () => {
         <BottomContainer>
           <LocationContainer>
             <InputDisplay 
-                icon={IconLoc} 
+                icon="location-outline"
                 text="3 miles" 
                 subtext="Ninian Road" 
                 onPress={(): void => {

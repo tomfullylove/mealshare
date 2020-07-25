@@ -8,8 +8,5 @@ export const Container = Styled.View`
 
 export const Text = Styled.Text`
   font-size: 15px;
-`;
-
-export const Icon = Styled.Image`
-margin-left: 2px;
+  margin-right: 2px;
 `;

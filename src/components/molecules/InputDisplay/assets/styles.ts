@@ -16,11 +16,8 @@ export const Container = Styled.TouchableOpacity`
   shadow-opacity: 1;
 `;
 
-export const Icon = Styled.Image`
-`;
-
 export const Text = Styled.Text`
-  margin-left: 12px;
+  margin-left: 8px;
   font-size: 14px;
   font-weight: 600;
   color: ${colors.black};
