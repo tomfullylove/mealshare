@@ -1,7 +1,8 @@
 import React from 'react';
-
 import Modal from 'react-native-modal';
-import Slider from '@react-native-community/slider';
+import Ionicons from 'react-native-vector-icons/Ionicons';
+
+import colors from '../../utils/colors';
 
 import Button from '../../components/atoms/Button';
 import AltButton from '../../components/atoms/AltButton';
@@ -70,8 +71,9 @@ const Filters: React.FC<Props> = ({visible, close}) => {
         <Container>
           <TopContainer>
             <Title>Filters</Title>
+            <Ionicons name="close-outline" color={colors.grey} size={30} onPress={close} />
           </TopContainer>
-          <ScrollContainer>
+          <ScrollContainer showsVerticalScrollIndicator={false}>
             <FieldContainer>
               <FieldTitle>Diet</FieldTitle>
               <CheckButtonGroup items={diets} />

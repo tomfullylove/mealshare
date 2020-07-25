@@ -4,22 +4,27 @@ import colors from '../../../../utils/colors';
 export const Container = Styled.TouchableOpacity`
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  width: 300px;
+  margin-right: 16px;
+  background-color: ${colors.white};
+  border-radius: 12px;
+  shadow-color: ${colors.shadow};
+  shadow-offset: 0px 2px;
+  shadow-opacity: 1;
 `;
 
 export const Image = Styled.Image`
   width: 100%;
-  height: 150px;
-  background-color: #9991;
-  borderTopLeftRadius: 6px;
-  borderTopRightRadius: 6px;
+  height: 140px;
+  borderTopLeftRadius: 12px;
+  borderTopRightRadius: 12px;
 `;
 
 export const BottomContainer = Styled.View`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 8px 4px 0;
+  padding: 8px 8px 4px;
 `;
 
 export const LeftContainer = Styled.View`

@@ -1,6 +1,7 @@
 import Styled from 'styled-components/native';
 
-export const Container = Styled.View`
+export const Container = Styled.ScrollView`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  padding: 8px;
 `;

@@ -5,7 +5,7 @@ import {Container} from './assets/styles';
 
 const AllItems: React.FC = () => {
   return (
-    <Container>
+    <Container horizontal showsHorizontalScrollIndicator={false}>
       <ListItem
         name="Beef Ramen"
         portions={4}

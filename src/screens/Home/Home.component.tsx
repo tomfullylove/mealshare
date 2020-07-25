@@ -7,6 +7,7 @@ import Button from '../../components/atoms/Button';
 import FilterModal from '../../modals/Filters';
 import DateTimeModal from '../../modals/DateTime';
 import LocationModal from '../../modals/DateTime';
+import AllItems from '../../components/templates/lists/AllItems';
 
 import {
   Container,
@@ -23,7 +24,7 @@ const Home: React.FC = () => {
   return (
     <>
       <Container>
-        <MapView 
+        <MapView
           style={{
             position: 'absolute',
             top: 0,
@@ -32,11 +33,12 @@ const Home: React.FC = () => {
             bottom: 0,
           }}
           initialRegion={{
-            latitude: 51.492130,
-            longitude: -3.164290,
+            latitude: 51.498941,
+            longitude: -3.1711347,
             latitudeDelta: 0.01,
             longitudeDelta: 0.01,
           }}
+          showsUserLocation={true}
         />
         <TopContainer>
           <InputDisplay 
@@ -66,6 +68,7 @@ const Home: React.FC = () => {
                 }}
             />
           </LocationContainer>
+          <AllItems />
         </BottomContainer>
       </Container>
       <FilterModal visible={filtersVisible} close={() => showFiltersModal(false)} />

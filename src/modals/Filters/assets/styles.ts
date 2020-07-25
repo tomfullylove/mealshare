@@ -17,13 +17,16 @@ export const Container = Styled.View`
 `;
 
 export const TopContainer = Styled.View`
-  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px 8px;
 `;
 
 export const Title = Styled.Text`
+  padding: 8px 8px 0;
   font-size: 19px;
   font-weight: 600;
-  width: 100%;
   color: ${colors.grey};
 `;
 

@@ -32,6 +32,6 @@ export const BottomContainer = Styled.View`
 export const LocationContainer = Styled.View`
   max-width: 80%;
   height: 40px;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   align-self: center;
 `;
