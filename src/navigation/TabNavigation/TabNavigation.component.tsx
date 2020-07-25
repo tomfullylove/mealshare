@@ -27,7 +27,7 @@ const TabNavigation: React.FC = () => {
           options={{
             tabBarLabel: 'Home',
             tabBarIcon: ({ color, size }) => (
-              <Ionicons name="home-outline" color={color} size={size} />
+              <Ionicons name="fast-food-outline" color={color} size={size} />
             ),
           }}
         />
@@ -37,7 +37,7 @@ const TabNavigation: React.FC = () => {
           options={{
             tabBarLabel: 'Orders',
             tabBarIcon: ({ color, size }) => (
-              <Ionicons name="list-outline" color={color} size={size} />
+              <Ionicons name="receipt-outline" color={color} size={size} />
             ),
           }}
         />
@@ -47,7 +47,7 @@ const TabNavigation: React.FC = () => {
           options={{
             tabBarLabel: 'Selling',
             tabBarIcon: ({ color, size }) => (
-              <Ionicons name="pricetag-outline" color={color} size={size} />
+              <Ionicons name="pricetags-outline" color={color} size={size} />
             ),
           }}
         />
