@@ -30,6 +30,8 @@ const List = React.forwardRef((props, ref) => {
       data={props.meals}
       renderItem={renderItem}
       ItemSeparatorComponent={Spacer}
+      decelerationRate={0}
+      snapToInterval={316}
     />
   );
 });
