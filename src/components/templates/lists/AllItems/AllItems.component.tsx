@@ -7,6 +7,7 @@ import {Spacer} from './assets/styles';
 interface Props {
   listRef: React.RefObject<any>;
   meals: any;
+  setFocusedMeal: (meal) => void;
 }
 
 const List = React.forwardRef((props, ref) => {
@@ -32,12 +33,17 @@ const List = React.forwardRef((props, ref) => {
       ItemSeparatorComponent={Spacer}
       decelerationRate={0}
       snapToInterval={316}
+      onMomentumScrollEnd={(event) => {
+        const xOffset = event.nativeEvent.contentOffset.x;
+        const scrollToIndex = Math.round(xOffset / 316);
+        props.setFocusedMeal(props.meals[scrollToIndex]);
+      }}
     />
   );
 });
 
-const AllItems: React.FC<Props> = ({meals, listRef}) => {
-  return <List ref={listRef} meals={meals} />;
+const AllItems: React.FC<Props> = ({meals, listRef, setFocusedMeal}) => {
+  return <List ref={listRef} meals={meals} setFocusedMeal={setFocusedMeal} />;
 };
 
 export default AllItems;

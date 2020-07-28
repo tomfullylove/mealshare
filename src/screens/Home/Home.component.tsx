@@ -26,12 +26,12 @@ const Home: React.FC<Props> = ({meals}) => {
   const [focusedMeal, setMealRegion] = useState(meals[0]);
   const map = useRef(null);
   const mealList = useRef(null);
-  const setFocusedMeal = (meal) => {
+  const setFocusedMeal = (meal, scroll = true) => {
     setMealRegion(meal);
     if (map && map.current) {
       map.current.animateToRegion(meal.location);
     }
-    if (mealList && mealList.current) {
+    if (scroll && mealList && mealList.current) {
       mealList.current.scrollToItem({item: meal});
     }
   };
@@ -94,7 +94,11 @@ const Home: React.FC<Props> = ({meals}) => {
               }}
             />
           </LocationContainer>
-          <AllItems listRef={mealList} meals={meals} />
+          <AllItems
+            listRef={mealList}
+            meals={meals}
+            setFocusedMeal={(meal) => setFocusedMeal(meal, false)}
+          />
         </BottomContainer>
       </Container>
       <FilterModal
