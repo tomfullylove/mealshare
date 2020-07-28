@@ -19,34 +19,33 @@ const TabNavigation: React.FC = () => {
           showLabel: false,
           activeTintColor: colors.main,
           inactiveTintColor: colors.black,
-        }}
-      >
-        <Tab.Screen 
-          name="Home" 
-          component={Home} 
+        }}>
+        <Tab.Screen
+          name="Home"
+          component={Home}
           options={{
             tabBarLabel: 'Home',
-            tabBarIcon: ({ color, size }) => (
+            tabBarIcon: ({color, size}) => (
               <Ionicons name="fast-food-outline" color={color} size={size} />
             ),
           }}
         />
-        <Tab.Screen 
-          name="Orders" 
-          component={Orders} 
+        <Tab.Screen
+          name="Orders"
+          component={Orders}
           options={{
             tabBarLabel: 'Orders',
-            tabBarIcon: ({ color, size }) => (
+            tabBarIcon: ({color, size}) => (
               <Ionicons name="receipt-outline" color={color} size={size} />
             ),
           }}
         />
-        <Tab.Screen 
-          name="Selling" 
-          component={Selling} 
+        <Tab.Screen
+          name="Selling"
+          component={Selling}
           options={{
             tabBarLabel: 'Selling',
-            tabBarIcon: ({ color, size }) => (
+            tabBarIcon: ({color, size}) => (
               <Ionicons name="pricetags-outline" color={color} size={size} />
             ),
           }}
