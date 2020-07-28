@@ -41,7 +41,7 @@ const ListItem: React.FC<Props> = ({
           </RowContainer>
         </LeftContainer>
         <RightContainer>
-          <Price textSize={20} price={price} />
+          <Price textSize={22} price={price} />
           <UserDistance distance={distance} />
         </RightContainer>
       </BottomContainer>

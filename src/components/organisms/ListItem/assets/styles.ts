@@ -15,7 +15,7 @@ export const Container = Styled.TouchableOpacity`
 
 export const Image = Styled.Image`
   width: 100%;
-  height: 140px;
+  height: 120px;
   borderTopLeftRadius: 12px;
   borderTopRightRadius: 12px;
 `;
@@ -24,7 +24,7 @@ export const BottomContainer = Styled.View`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 8px 8px 4px;
+  padding: 8px;
 `;
 
 export const LeftContainer = Styled.View`
@@ -39,7 +39,7 @@ export const RightContainer = Styled.View`
 `;
 
 export const Title = Styled.Text`
-  font-size: 15px;
+  font-size: 17px;
 `;
 
 export const RowContainer = Styled.View`
@@ -50,7 +50,7 @@ export const RowContainer = Styled.View`
 `;
 
 export const Text = Styled.Text`
-  font-size: 12px;
+  font-size: 14px;
   color: ${colors.grey};
   margin-left: 4px;
 `;
