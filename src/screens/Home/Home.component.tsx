@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 
 import MapView, {Marker} from 'react-native-maps';
 
@@ -24,11 +24,23 @@ const Home: React.FC<Props> = ({meals}) => {
   const [dateTimeVisible, showDateTimeModal] = useState(false);
   const [locationVisible, showLocationModal] = useState(false);
   const [focusedMeal, setMealRegion] = useState(meals[0]);
+  const map = useRef(null);
+  const mealList = useRef(null);
+  const setFocusedMeal = (meal) => {
+    setMealRegion(meal);
+    if (map && map.current) {
+      map.current.animateToRegion(meal.location);
+    }
+    if (mealList && mealList.current) {
+      mealList.current.scrollToItem({item: meal});
+    }
+  };
+
   return (
     <>
       <Container>
         <MapView
-          rotateEnabled={false}
+          ref={map}
           // eslint-disable-next-line react-native/no-inline-styles
           style={{
             position: 'absolute',
@@ -37,9 +49,10 @@ const Home: React.FC<Props> = ({meals}) => {
             right: 0,
             bottom: 0,
           }}
-          region={{
-            latitude: focusedMeal.location.latitude,
-            longitude: focusedMeal.location.longitude,
+          rotateEnabled={false}
+          initialRegion={{
+            latitude: meals[0].location.latitude,
+            longitude: meals[0].location.longitude,
             latitudeDelta: 0.01,
             longitudeDelta: 0.01,
           }}
@@ -48,7 +61,7 @@ const Home: React.FC<Props> = ({meals}) => {
             <Marker
               key={meal.id}
               coordinate={meal.location}
-              onPress={(): void => setMealRegion(meal)}>
+              onPress={(): void => setFocusedMeal(meal)}>
               <MapMarker selected={meal === focusedMeal} />
             </Marker>
           ))}
@@ -81,7 +94,7 @@ const Home: React.FC<Props> = ({meals}) => {
               }}
             />
           </LocationContainer>
-          <AllItems meals={meals} />
+          <AllItems listRef={mealList} meals={meals} />
         </BottomContainer>
       </Container>
       <FilterModal

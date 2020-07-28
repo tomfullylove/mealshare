@@ -5,10 +5,11 @@ import ListItem from '../../../organisms/ListItem';
 import {Spacer} from './assets/styles';
 
 interface Props {
+  listRef: React.RefObject<any>;
   meals: any;
 }
 
-const AllItems: React.FC<Props> = ({meals}) => {
+const List = React.forwardRef((props, ref) => {
   const renderItem = ({item}) => {
     return (
       <ListItem
@@ -23,13 +24,18 @@ const AllItems: React.FC<Props> = ({meals}) => {
   };
   return (
     <FlatList
+      ref={ref}
       horizontal
       showsHorizontalScrollIndicator={false}
-      data={meals}
+      data={props.meals}
       renderItem={renderItem}
       ItemSeparatorComponent={Spacer}
     />
   );
+});
+
+const AllItems: React.FC<Props> = ({meals, listRef}) => {
+  return <List ref={listRef} meals={meals} />;
 };
 
 export default AllItems;
