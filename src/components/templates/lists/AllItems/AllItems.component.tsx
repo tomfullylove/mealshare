@@ -1,26 +1,34 @@
 import React from 'react';
+import {FlatList} from 'react-native';
 import ListItem from '../../../organisms/ListItem';
 
-import {Container} from './assets/styles';
+import {Spacer} from './assets/styles';
 
 interface Props {
   meals: any;
 }
 
 const AllItems: React.FC<Props> = ({meals}) => {
+  const renderItem = ({item}) => {
+    return (
+      <ListItem
+        key={item.id}
+        name={item.title}
+        portions={item.portions}
+        rating={item.rating}
+        price={item.price}
+        distance={item.price}
+      />
+    );
+  };
   return (
-    <Container horizontal showsHorizontalScrollIndicator={false}>
-      {meals.map((meal) => (
-        <ListItem
-          key={meal.uuid}
-          name={meal.title}
-          portions={meal.portions}
-          rating={meal.rating}
-          price={meal.price}
-          distance={meal.price}
-        />
-      ))}
-    </Container>
+    <FlatList
+      horizontal
+      showsHorizontalScrollIndicator={false}
+      data={meals}
+      renderItem={renderItem}
+      ItemSeparatorComponent={Spacer}
+    />
   );
 };
 

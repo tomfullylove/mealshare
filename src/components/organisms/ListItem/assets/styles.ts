@@ -5,7 +5,6 @@ export const Container = Styled.TouchableOpacity`
   display: flex;
   flex-direction: column;
   width: 300px;
-  margin-right: 16px;
   background-color: ${colors.white};
   border-radius: 12px;
   shadow-color: ${colors.shadow};
@@ -15,7 +14,7 @@ export const Container = Styled.TouchableOpacity`
 
 export const Image = Styled.Image`
   width: 100%;
-  height: 120px;
+  height: 140px;
   borderTopLeftRadius: 12px;
   borderTopRightRadius: 12px;
 `;
