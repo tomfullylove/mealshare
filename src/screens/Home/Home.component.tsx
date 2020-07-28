@@ -28,6 +28,7 @@ const Home: React.FC<Props> = ({meals}) => {
     <>
       <Container>
         <MapView
+          rotateEnabled={false}
           // eslint-disable-next-line react-native/no-inline-styles
           style={{
             position: 'absolute',

@@ -54,8 +54,8 @@ const initialState = {
       portions: 4,
       price: 2,
       location: {
-        latitude: 51.498523,
-        longitude: -3.170524,
+        latitude: 51.502145,
+        longitude: -3.173411,
       },
     },
   ],
