@@ -3,7 +3,7 @@ import {TEST_ACTION, MealState, ConfigActionTypes} from './types';
 const initialState = {
   allMeals: [
     {
-      uuid: 'c38d5280-667e-47e8-ad52-d980970c6ff2',
+      id: 'c38d5280-667e-47e8-ad52-d980970c6ff2',
       title: 'Smoked fish linguini',
       subTitle: '',
       rating: 5,
@@ -17,7 +17,7 @@ const initialState = {
       },
     },
     {
-      uuid: 'c38d5280-667e-47e8-ad52-d980970hgfg2',
+      id: 'c38d5280-667e-47e8-ad52-d980970hgfg2',
       title: 'Tandori chicken salad',
       subTitle: '',
       rating: 4,
@@ -31,7 +31,21 @@ const initialState = {
       },
     },
     {
-      uuid: 'c38d5280-667e-47e8-ad52-d980970poiu2',
+      id: 'c38d5280-667e-47e8-ad52-d980970poiu2',
+      title: 'Chicken buriani',
+      subTitle: '',
+      rating: 3,
+      distance: 2,
+      imageUrl: '',
+      portions: 4,
+      price: 2,
+      location: {
+        latitude: 51.498523,
+        longitude: -3.170524,
+      },
+    },
+    {
+      id: 'c38d5280-667e-47e8-ad52-d970970poiu2',
       title: 'Chicken buriani',
       subTitle: '',
       rating: 3,
@@ -45,8 +59,8 @@ const initialState = {
       },
     },
   ],
-  focusedMeal: {
-    uuid: null,
+  selectedMeal: {
+    id: null,
     title: '',
     subTitle: '',
     rating: '',

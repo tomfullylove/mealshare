@@ -23,7 +23,7 @@ const Home: React.FC<Props> = ({meals}) => {
   const [filtersVisible, showFiltersModal] = useState(false);
   const [dateTimeVisible, showDateTimeModal] = useState(false);
   const [locationVisible, showLocationModal] = useState(false);
-  const [mealRegion, setMealRegion] = useState(meals[0].location);
+  const [focusedMeal, setMealRegion] = useState(meals[0]);
   return (
     <>
       <Container>
@@ -37,18 +37,18 @@ const Home: React.FC<Props> = ({meals}) => {
             bottom: 0,
           }}
           region={{
-            latitude: mealRegion.latitude,
-            longitude: mealRegion.longitude,
+            latitude: focusedMeal.location.latitude,
+            longitude: focusedMeal.location.longitude,
             latitudeDelta: 0.01,
             longitudeDelta: 0.01,
           }}
           showsUserLocation={true}>
           {meals.map((meal) => (
             <Marker
-              key={meal.uuid}
+              key={meal.id}
               coordinate={meal.location}
-              onPress={(): void => setMealRegion(meal.location)}>
-              <MapMarker selected={meal.location === mealRegion} />
+              onPress={(): void => setMealRegion(meal)}>
+              <MapMarker selected={meal === focusedMeal} />
             </Marker>
           ))}
         </MapView>
