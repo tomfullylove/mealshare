@@ -10,6 +10,7 @@ export const Container = Styled.TouchableOpacity`
   shadow-color: ${colors.shadow};
   shadow-offset: 0px 2px;
   shadow-opacity: 1;
+  margin-bottom: 8px;
 `;
 
 export const Image = Styled.Image`

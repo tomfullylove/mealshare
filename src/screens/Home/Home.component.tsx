@@ -68,7 +68,7 @@ const Home: React.FC<Props> = ({meals}) => {
         </MapView>
         <TopContainer>
           <InputDisplay
-            icon="calendar-outline"
+            icon="calendar"
             text="5pm - 7pm"
             subtext="Today"
             onPress={(): void => {
@@ -86,7 +86,7 @@ const Home: React.FC<Props> = ({meals}) => {
         <BottomContainer>
           <LocationContainer>
             <InputDisplay
-              icon="location-outline"
+              icon="locate"
               text="3 km"
               subtext="Ninian Road"
               onPress={(): void => {
