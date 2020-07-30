@@ -28,10 +28,14 @@ const Home: React.FC<Props> = ({meals}) => {
   const [focusedMeal, setMealRegion] = useState(meals[0]);
   const map = useRef(null);
   const mealList = useRef(null);
-  const setFocusedMeal = (meal, scroll = true) => {
+  // REFACTOR
+  const setFocusedMeal = (meal, setRegion = true, scroll = true) => {
     setMealRegion(meal);
-    if (map && map.current) {
-      map.current.animateToRegion({latitude: meal.location.latitude - LATITUDE_OFFSET, longitude: meal.location.longitude});
+    if (setRegion && map && map.current) {
+      map.current.animateToRegion({
+        latitude: meal.location.latitude - LATITUDE_OFFSET,
+        longitude: meal.location.longitude,
+      });
     }
     if (scroll && mealList && mealList.current) {
       mealList.current.scrollToItem({item: meal});
@@ -63,7 +67,7 @@ const Home: React.FC<Props> = ({meals}) => {
             <Marker
               key={meal.id}
               coordinate={meal.location}
-              onPress={(): void => setFocusedMeal(meal)}>
+              onPress={(): void => setFocusedMeal(meal, false, true)}>
               <MapMarker selected={meal === focusedMeal} />
             </Marker>
           ))}
@@ -99,7 +103,7 @@ const Home: React.FC<Props> = ({meals}) => {
           <AllItems
             listRef={mealList}
             meals={meals}
-            setFocusedMeal={(meal) => setFocusedMeal(meal, false)}
+            setFocusedMeal={(meal) => setFocusedMeal(meal, true, false)}
           />
         </BottomContainer>
       </Container>
