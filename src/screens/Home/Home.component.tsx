@@ -19,6 +19,8 @@ import {
   LocationContainer,
 } from './assets/styles';
 
+const LATITUDE_OFFSET = 0
+
 const Home: React.FC<Props> = ({meals}) => {
   const [filtersVisible, showFiltersModal] = useState(false);
   const [dateTimeVisible, showDateTimeModal] = useState(false);
@@ -29,7 +31,7 @@ const Home: React.FC<Props> = ({meals}) => {
   const setFocusedMeal = (meal, scroll = true) => {
     setMealRegion(meal);
     if (map && map.current) {
-      map.current.animateToRegion(meal.location);
+      map.current.animateToRegion({latitude: meal.location.latitude - LATITUDE_OFFSET, longitude: meal.location.longitude});
     }
     if (scroll && mealList && mealList.current) {
       mealList.current.scrollToItem({item: meal});
@@ -51,7 +53,7 @@ const Home: React.FC<Props> = ({meals}) => {
           }}
           rotateEnabled={false}
           initialRegion={{
-            latitude: meals[0].location.latitude,
+            latitude: meals[0].location.latitude - LATITUDE_OFFSET,
             longitude: meals[0].location.longitude,
             latitudeDelta: 0.01,
             longitudeDelta: 0.01,

@@ -1,6 +1,6 @@
 import React from 'react';
 import {FlatList} from 'react-native';
-import ListItem from '../../../organisms/ListItem';
+import MealCard from '../../../organisms/MealCard';
 
 import {Spacer} from './assets/styles';
 
@@ -13,7 +13,7 @@ interface Props {
 const List = React.forwardRef((props, ref) => {
   const renderItem = ({item}) => {
     return (
-      <ListItem
+      <MealCard
         key={item.id}
         name={item.title}
         portions={item.portions}
