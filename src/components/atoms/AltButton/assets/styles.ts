@@ -8,7 +8,7 @@ interface StyledProps {
 }
 
 export const Container = Styled.TouchableOpacity<StyledProps>`
-  background-color: ${colors.lighterGrey}
+  background-color: ${colors.lighterGrey};
   border-radius: 20px;
   padding: 4px;
 `;
@@ -19,13 +19,14 @@ export const SelectedContainer = Styled.TouchableOpacity<StyledProps>`
   justify-content: center;
   align-items: center;
   padding: 0 ${({small}): number => (small ? 16 : 20)}px;
-  background-color: ${({active}): string => (active ? colors.white : colors.lighterGrey)};
+  background-color: ${({active}): string =>
+    active ? colors.white : colors.lighterGrey};
   border-radius: 20px;
   height: ${({small}): number => (small ? 24 : 32)}px;
 `;
 
 export const Text = Styled.Text<StyledProps>`
-font-size: ${({small}): number => (small ? 12 : 14)}px;
-  color: ${colors.black}
-  font-weight: ${({small}): number => (small ? 400 :500)};
+  font-size: ${({small}): number => (small ? 12 : 14)}px;
+  color: ${colors.black};
+  font-weight: ${({small}): number => (small ? 400 : 500)};
 `;

@@ -5,10 +5,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import colors from '../../utils/colors';
 
-import {
-  Container,
-  TopContainer,
-} from './assets/styles';
+import {Container, TopContainer} from './assets/styles';
 
 interface Props {
   close: () => void;
@@ -17,14 +14,19 @@ interface Props {
 
 const DateTime: React.FC<Props> = ({visible, close}) => {
   return (
-    <Modal 
-      isVisible={visible} 
-      onSwipeComplete={close} 
-      swipeDirection="down" 
-    >
+    <Modal
+      isVisible={visible}
+      onBackdropPress={close}
+      onSwipeComplete={close}
+      swipeDirection="down">
       <Container>
         <TopContainer>
-          <Ionicons name="close-outline" color={colors.grey} size={30} onPress={close} />
+          <Ionicons
+            name="close-outline"
+            color={colors.grey}
+            size={30}
+            onPress={close}
+          />
         </TopContainer>
       </Container>
     </Modal>

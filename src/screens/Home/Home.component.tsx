@@ -19,7 +19,7 @@ import {
   LocationContainer,
 } from './assets/styles';
 
-const LATITUDE_OFFSET = 0
+const LATITUDE_OFFSET = 0;
 
 const Home: React.FC<Props> = ({meals}) => {
   const [filtersVisible, showFiltersModal] = useState(false);
@@ -74,7 +74,7 @@ const Home: React.FC<Props> = ({meals}) => {
         </MapView>
         <TopContainer>
           <InputDisplay
-            icon="calendar"
+            icon="calendar-outline"
             text="5pm - 7pm"
             subtext="Today"
             onPress={(): void => {

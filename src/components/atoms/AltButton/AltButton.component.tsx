@@ -14,9 +14,7 @@ const AltButton: React.FC<Props> = ({id, small, onPress, active, text}) => {
   return (
     <Container id={id} onPress={onPress}>
       <SelectedContainer small={small} active={active}>
-        <Text small={small}>
-          {text}
-        </Text>
+        <Text small={small}>{text}</Text>
       </SelectedContainer>
     </Container>
   );

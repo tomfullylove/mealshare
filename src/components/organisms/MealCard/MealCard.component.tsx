@@ -1,10 +1,10 @@
 import React from 'react';
 import StarRating from '../../atoms/StarRating';
 import Price from '../../atoms/Price';
-import UserDistance from '../../molecules/UserDistance';
 
 import {
   Container,
+  Backdrop,
   Image,
   TitleContainer,
   Title,
@@ -13,6 +13,9 @@ import {
   Text,
   BottomContainer,
   InfoContainer,
+  InfoBox,
+  InfoText,
+  InfoSpacer,
 } from './assets/styles';
 
 interface Props {
@@ -31,24 +34,9 @@ const MealCard: React.FC<Props> = ({
   distance,
 }) => {
   return (
-    // <Container>
-    //   <Image source={require('../../../assets/food.jpg')} />
-    //   <BottomContainer>
-    //     <LeftContainer>
-    //       <Title>{name}</Title>
-    //       <RowContainer>
-    //         <StarRating rating={rating} />
-    //         <Text>{portions} portions left</Text>
-    //       </RowContainer>
-    //     </LeftContainer>
-    //     <RightContainer>
-    //       <Price textSize={22} price={price} />
-    //       <UserDistance distance={distance} />
-    //     </RightContainer>
-    //   </BottomContainer>
-    // </Container>
     <Container>
       <Image source={require('../../../assets/food.jpg')}>
+        <Backdrop colors={['rgba(0, 0, 0, 0)', 'rgba(0, 0, 0, 1)']} />
         <TitleContainer>
           <Title>{name}</Title>
           <RowContainer>
@@ -57,10 +45,23 @@ const MealCard: React.FC<Props> = ({
           </RowContainer>
         </TitleContainer>
         <Text>
-          Lorem ipsum dolor amet chicharrones meditation af marfa, cred green juice blue bottle kickstarter..
+          Lorem ipsum dolor amet chicharrones meditatio af marfa, cred green
+          juice blue bottle kickstart..
         </Text>
         <BottomContainer>
-          <InfoContainer />
+          <InfoContainer>
+            <InfoBox>
+              <InfoText>6pm today</InfoText>
+            </InfoBox>
+            <InfoSpacer />
+            <InfoBox>
+              <InfoText>4 portions</InfoText>
+            </InfoBox>
+            <InfoSpacer />
+            <InfoBox>
+              <InfoText>2km away</InfoText>
+            </InfoBox>
+          </InfoContainer>
           <Price textSize={26} price={price} />
         </BottomContainer>
       </Image>

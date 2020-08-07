@@ -58,20 +58,27 @@ interface Props {
 
 const Filters: React.FC<Props> = ({visible, close}) => {
   return (
-    <Modal 
-      isVisible={visible} 
+    <Modal
+      isVisible={visible}
       propagateSwipe
+      // eslint-disable-next-line react-native/no-inline-styles
       style={{
         marginBottom: 0,
         marginLeft: 0,
         marginRight: 0,
       }}
-    >
+      swipeDirection="down"
+      onSwipeComplete={close}>
       <Wrapper>
         <Container>
           <TopContainer>
             <Title>Filters</Title>
-            <Ionicons name="close-outline" color={colors.grey} size={30} onPress={close} />
+            <Ionicons
+              name="close-outline"
+              color={colors.grey}
+              size={30}
+              onPress={close}
+            />
           </TopContainer>
           <ScrollContainer showsVerticalScrollIndicator={false}>
             <FieldContainer>

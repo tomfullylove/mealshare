@@ -1,4 +1,5 @@
 import Styled from 'styled-components/native';
+import LinearGradient from 'react-native-linear-gradient';
 import colors from '../../../../utils/colors';
 
 export const Container = Styled.TouchableOpacity`
@@ -9,14 +10,24 @@ export const Container = Styled.TouchableOpacity`
   margin-bottom: 6px;
 `;
 
+export const Backdrop = Styled(LinearGradient)`
+  border-radius: 14px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+`;
+
 export const Image = Styled.ImageBackground`
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   height: 250px;
   border-radius: 14px;
   overflow: hidden;
-  padding: 6px;
+  padding: 6px 10px;
 `;
 
 export const TitleContainer = Styled.View`
@@ -47,6 +58,7 @@ export const Text = Styled.Text`
   font-size: 12px;
   color: ${colors.white};
   font-weight: 500;
+  line-height: 15px;
 `;
 
 export const BottomContainer = Styled.View`
@@ -58,4 +70,26 @@ export const BottomContainer = Styled.View`
 export const InfoContainer = Styled.View`
   display: flex;
   flex-direction: row;
+  align-items: center;
+`;
+
+export const InfoBox = Styled.View`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: ${colors.lighterGrey};
+  border-radius: 20px;
+  height: 19px;
+  padding: 0 8px;
+`;
+
+export const InfoSpacer = Styled.View`
+  width: 6px;
+`;
+
+export const InfoText = Styled.Text`
+  font-size: 10px;
+  color: ${colors.black};
+  font-weight: 500;
 `;
