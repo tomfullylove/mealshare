@@ -36,7 +36,7 @@ const MealCard: React.FC<Props> = ({
   return (
     <Container>
       <Image source={require('../../../assets/food.jpg')}>
-        <Backdrop colors={['rgba(0, 0, 0, 0)', 'rgba(0, 0, 0, 1)']} />
+        <Backdrop colors={['rgba(0, 0, 0, 0.2)', 'rgba(0, 0, 0, 1)']} />
         <TitleContainer>
           <Title>{name}</Title>
           <RowContainer>
