@@ -26,12 +26,11 @@ export const BottomContainer = Styled.View`
   display: flex;
   flex-direction: column;
   padding: 8px;
-  width: 100%;
 `;
 
 export const LocationContainer = Styled.View`
   max-width: 80%;
   height: 40px;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   align-self: center;
 `;
