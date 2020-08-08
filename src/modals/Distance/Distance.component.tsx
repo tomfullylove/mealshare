@@ -9,12 +9,12 @@ interface Props {
   visible: boolean;
 }
 
-const DateTime: React.FC<Props> = ({visible, close}) => {
+const Distance: React.FC<Props> = ({visible, close}) => {
   return (
     <SlideUp
       visible={visible}
       close={close}
-      title="Pickup time"
+      title="Distance"
       buttonText="Show results"
       altButtonText="Reset"
       buttonPress={close}
@@ -24,4 +24,4 @@ const DateTime: React.FC<Props> = ({visible, close}) => {
   );
 };
 
-export default DateTime;
+export default Distance;

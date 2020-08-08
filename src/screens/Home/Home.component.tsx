@@ -7,7 +7,7 @@ import InputDisplay from '../../components/molecules/InputDisplay';
 import Button from '../../components/atoms/Button';
 import FilterModal from '../../modals/Filters';
 import DateTimeModal from '../../modals/DateTime';
-import LocationModal from '../../modals/DateTime';
+import DistanceModal from '../../modals/Distance';
 import AllItems from '../../components/templates/lists/AllItems';
 import MapMarker from '../../components/atoms/MapMarker';
 
@@ -96,7 +96,7 @@ const Home: React.FC<Props> = ({meals}) => {
               text="3 km"
               subtext="Ninian Road"
               onPress={(): void => {
-                showDateTimeModal(true);
+                showLocationModal(true);
               }}
             />
           </LocationContainer>
@@ -115,7 +115,7 @@ const Home: React.FC<Props> = ({meals}) => {
         visible={dateTimeVisible}
         close={() => showDateTimeModal(false)}
       />
-      <LocationModal
+      <DistanceModal
         visible={locationVisible}
         close={() => showLocationModal(false)}
       />
