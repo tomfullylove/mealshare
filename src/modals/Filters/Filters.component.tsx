@@ -1,24 +1,11 @@
 import React from 'react';
-import Modal from 'react-native-modal';
-import Ionicons from 'react-native-vector-icons/Ionicons';
 
-import colors from '../../utils/colors';
+import SlideUp from '../templates/SlideUp';
 
-import Button from '../../components/atoms/Button';
-import AltButton from '../../components/atoms/AltButton';
 import CheckButtonGroup from '../../components/molecules/CheckButtonGroup';
 import TabSelector from '../../components/molecules/TabSelector';
 
-import {
-  Wrapper,
-  Container,
-  Title,
-  TopContainer,
-  ScrollContainer,
-  FieldContainer,
-  FieldTitle,
-  BottomContainer,
-} from './assets/styles';
+import {FieldContainer, FieldTitle} from './assets/styles';
 
 const diets = [
   {id: '1', text: 'Vegan'},
@@ -58,57 +45,35 @@ interface Props {
 
 const Filters: React.FC<Props> = ({visible, close}) => {
   return (
-    <Modal
-      isVisible={visible}
-      propagateSwipe
-      // eslint-disable-next-line react-native/no-inline-styles
-      style={{
-        marginBottom: 0,
-        marginLeft: 0,
-        marginRight: 0,
-      }}
-      swipeDirection="down"
-      onSwipeComplete={close}>
-      <Wrapper>
-        <Container>
-          <TopContainer>
-            <Title>Filters</Title>
-            <Ionicons
-              name="close-outline"
-              color={colors.grey}
-              size={30}
-              onPress={close}
-            />
-          </TopContainer>
-          <ScrollContainer showsVerticalScrollIndicator={false}>
-            <FieldContainer>
-              <FieldTitle>Diet</FieldTitle>
-              <CheckButtonGroup items={diets} />
-            </FieldContainer>
-            <FieldContainer>
-              <FieldTitle>Cuisine</FieldTitle>
-              <CheckButtonGroup items={cuisines} />
-            </FieldContainer>
-            <FieldContainer>
-              <FieldTitle>Price</FieldTitle>
-              <TabSelector />
-            </FieldContainer>
-            <FieldContainer>
-              <FieldTitle>Portions</FieldTitle>
-              <TabSelector />
-            </FieldContainer>
-            <FieldContainer>
-              <FieldTitle>Allergens</FieldTitle>
-              <CheckButtonGroup items={allergens} />
-            </FieldContainer>
-          </ScrollContainer>
-          <BottomContainer>
-            <AltButton onPress={() => {}} text="Clear" />
-            <Button onPress={close} text="Show Results" />
-          </BottomContainer>
-        </Container>
-      </Wrapper>
-    </Modal>
+    <SlideUp
+      visible={visible}
+      close={close}
+      title="Filters"
+      buttonText="Show results"
+      altButtonText="Clear"
+      buttonPress={close}
+      altButtonPress={() => {}}>
+      <FieldContainer>
+        <FieldTitle>Diet</FieldTitle>
+        <CheckButtonGroup items={diets} />
+      </FieldContainer>
+      <FieldContainer>
+        <FieldTitle>Cuisine</FieldTitle>
+        <CheckButtonGroup items={cuisines} />
+      </FieldContainer>
+      <FieldContainer>
+        <FieldTitle>Price</FieldTitle>
+        <TabSelector />
+      </FieldContainer>
+      <FieldContainer>
+        <FieldTitle>Portions</FieldTitle>
+        <TabSelector />
+      </FieldContainer>
+      <FieldContainer>
+        <FieldTitle>Allergens</FieldTitle>
+        <CheckButtonGroup items={allergens} />
+      </FieldContainer>
+    </SlideUp>
   );
 };
 
