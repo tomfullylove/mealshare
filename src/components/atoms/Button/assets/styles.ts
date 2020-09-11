@@ -10,8 +10,8 @@ export const Container = Styled.TouchableOpacity`
   background-color: ${colors.main};
   border-radius: 20px;
   padding: 0 20px;
-  shadow-color: ${colors.shadow};
-  shadow-offset: 0px 2px;
+  shadow-color: ${colors.mainShadow};
+  shadow-offset: 0px 3px;
   shadow-opacity: 1;
 `;
 
