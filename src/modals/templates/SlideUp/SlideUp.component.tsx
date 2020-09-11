@@ -1,7 +1,6 @@
 import React from 'react';
 import Modal from 'react-native-modal';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import { BlurView } from "@react-native-community/blur";
 
 import colors from '../../../utils/colors';
 
