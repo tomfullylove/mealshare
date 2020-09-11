@@ -15,7 +15,7 @@ interface Props {
 const InputDisplay: React.FC<Props> = ({onPress, icon, text, subtext}) => {
   return (
     <Container onPress={onPress}>
-      <Ionicons name={icon} color={colors.main} size={18} />
+      <Ionicons name={icon} color={colors.main} size={20} />
       <Text>{text}</Text>
       <Subtext>{subtext}</Subtext>
     </Container>

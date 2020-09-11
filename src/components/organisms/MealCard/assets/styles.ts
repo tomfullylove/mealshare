@@ -5,7 +5,7 @@ import colors from '../../../../utils/colors';
 export const Container = Styled.TouchableOpacity`
   width: 300px;
   shadow-color: ${colors.shadow};
-  shadow-offset: 0px 2px;
+  shadow-offset: 0px 3px;
   shadow-opacity: 1;
   margin-bottom: 6px;
 `;
@@ -90,7 +90,7 @@ export const InfoSpacer = Styled.View`
 `;
 
 export const InfoText = Styled.Text`
-  font-size: 10px;
+  font-size: 11px;
   color: ${colors.black};
   font-weight: 500;
 `;
