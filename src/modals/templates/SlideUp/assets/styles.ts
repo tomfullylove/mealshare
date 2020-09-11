@@ -9,10 +9,11 @@ export const Wrapper = Styled.View`
   height: 100%;
 `;
 
-export const Container = Styled.View`
+export const Container = Styled.SafeAreaView`
   borderTopLeftRadius: 17px;
   borderTopRightRadius: 17px;
   background-color: ${colors.background};
+  max-height: 100%;
 `;
 
 export const TopContainer = Styled.View`

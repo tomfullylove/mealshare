@@ -92,7 +92,7 @@ const Home: React.FC<Props> = ({meals}) => {
         <BottomContainer>
           <LocationContainer>
             <InputDisplay
-              icon="locate"
+              icon="earth-outline"
               text="3 km"
               subtext="Ninian Road"
               onPress={(): void => {

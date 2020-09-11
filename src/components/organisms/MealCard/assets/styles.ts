@@ -24,7 +24,7 @@ export const Image = Styled.ImageBackground`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 250px;
+  height: 300px;
   border-radius: 14px;
   overflow: hidden;
   padding: 6px 10px;
@@ -59,6 +59,7 @@ export const Text = Styled.Text`
   color: ${colors.white};
   font-weight: 500;
   line-height: 15px;
+  margin: 4px 0;
 `;
 
 export const BottomContainer = Styled.View`
@@ -81,7 +82,7 @@ export const InfoBox = Styled.View`
   background-color: ${colors.lighterGrey};
   border-radius: 20px;
   height: 19px;
-  padding: 0 8px;
+  padding: 0 10px;
 `;
 
 export const InfoSpacer = Styled.View`
