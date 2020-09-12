@@ -13,7 +13,7 @@ const StarRating: React.FC<Props> = ({rating}) => {
   return (
     <Container>
       <Text>{String(rating)}</Text>
-      <Ionicons name="star" color={colors.yellow} size={14} />
+      <Ionicons name="star" color={colors.yellow} size={16} />
     </Container>
   );
 };

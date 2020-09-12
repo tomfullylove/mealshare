@@ -36,7 +36,7 @@ const MealCard: React.FC<Props> = ({
   return (
     <Container>
       <Image source={require('../../../assets/food.jpg')}>
-        <Backdrop colors={['rgba(0, 0, 0, 0.2)', 'rgba(0, 0, 0, 1)']} />
+        <Backdrop colors={['rgba(0, 0, 0, 0.1)', 'rgba(0, 0, 0, 1)']} />
         <TitleContainer>
           <Title>{name}</Title>
           <RowContainer>
@@ -55,11 +55,11 @@ const MealCard: React.FC<Props> = ({
             </InfoBox>
             <InfoSpacer />
             <InfoBox>
-              <InfoText>4 portions</InfoText>
+              <InfoText>{portions} portions</InfoText>
             </InfoBox>
             <InfoSpacer />
             <InfoBox>
-              <InfoText>2km away</InfoText>
+              <InfoText>{distance}km away</InfoText>
             </InfoBox>
           </InfoContainer>
           <Price textSize={26} price={price} />

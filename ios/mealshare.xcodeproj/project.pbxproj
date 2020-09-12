@@ -18,6 +18,11 @@
 		2DCD954D1E0B4F2C00145EB5 /* mealshareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* mealshareTests.m */; };
 		87709447723DC3A06248453B /* libPods-mealshare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F3616CFEDAC5E6D54D8B45 /* libPods-mealshare.a */; };
 		9EBCA0B4E5D2D2A5C54EF8AA /* libPods-mealshare-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 445ED2CB42B9E68D2C92BE73 /* libPods-mealshare-tvOS.a */; };
+		A978353D250D1F3A00093E47 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9783538250D1F3900093E47 /* Quicksand-Regular.ttf */; };
+		A978353E250D1F3A00093E47 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9783539250D1F3900093E47 /* Quicksand-Bold.ttf */; };
+		A978353F250D1F3A00093E47 /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A978353A250D1F3900093E47 /* Quicksand-Light.ttf */; };
+		A9783540250D1F3A00093E47 /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A978353B250D1F3900093E47 /* Quicksand-Medium.ttf */; };
+		A9783541250D1F3A00093E47 /* Quicksand-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A978353C250D1F3900093E47 /* Quicksand-SemiBold.ttf */; };
 		E61B95993B8CFAF1888F872E /* libPods-mealshare-mealshareTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3595303973DBA732506FDDE2 /* libPods-mealshare-mealshareTests.a */; };
 		ED21610B6E155792398B0F19 /* libPods-mealshare-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21ED7E4068C1617CBCE5F7CC /* libPods-mealshare-tvOSTests.a */; };
 /* End PBXBuildFile section */
@@ -63,6 +68,11 @@
 		9415AE06821BCBCA1BACFF7A /* Pods-mealshare-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mealshare-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-mealshare-tvOS/Pods-mealshare-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		99F3616CFEDAC5E6D54D8B45 /* libPods-mealshare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mealshare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F210A67E12269021D3A9434 /* Pods-mealshare-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mealshare-tvOS.release.xcconfig"; path = "Target Support Files/Pods-mealshare-tvOS/Pods-mealshare-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		A9783538250D1F3900093E47 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Quicksand-Regular.ttf"; path = "../fonts/Quicksand-Regular.ttf"; sourceTree = "<group>"; };
+		A9783539250D1F3900093E47 /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Quicksand-Bold.ttf"; path = "../fonts/Quicksand-Bold.ttf"; sourceTree = "<group>"; };
+		A978353A250D1F3900093E47 /* Quicksand-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Quicksand-Light.ttf"; path = "../fonts/Quicksand-Light.ttf"; sourceTree = "<group>"; };
+		A978353B250D1F3900093E47 /* Quicksand-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Quicksand-Medium.ttf"; path = "../fonts/Quicksand-Medium.ttf"; sourceTree = "<group>"; };
+		A978353C250D1F3900093E47 /* Quicksand-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Quicksand-SemiBold.ttf"; path = "../fonts/Quicksand-SemiBold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F6619C5B711E78F2EC7B433B /* Pods-mealshare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mealshare.release.xcconfig"; path = "Target Support Files/Pods-mealshare/Pods-mealshare.release.xcconfig"; sourceTree = "<group>"; };
@@ -154,7 +164,6 @@
 			children = (
 			);
 			name = Resources;
-			path = "";
 			sourceTree = "<group>";
 		};
 		5AD2D88991A5D8E034951EAD /* Pods */ = {
@@ -182,6 +191,11 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				A9783539250D1F3900093E47 /* Quicksand-Bold.ttf */,
+				A978353A250D1F3900093E47 /* Quicksand-Light.ttf */,
+				A978353B250D1F3900093E47 /* Quicksand-Medium.ttf */,
+				A9783538250D1F3900093E47 /* Quicksand-Regular.ttf */,
+				A978353C250D1F3900093E47 /* Quicksand-SemiBold.ttf */,
 				13B07FAE1A68108700A75B9A /* mealshare */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* mealshareTests */,
@@ -350,7 +364,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				A978353D250D1F3A00093E47 /* Quicksand-Regular.ttf in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				A978353E250D1F3A00093E47 /* Quicksand-Bold.ttf in Resources */,
+				A978353F250D1F3A00093E47 /* Quicksand-Light.ttf in Resources */,
+				A9783541250D1F3A00093E47 /* Quicksand-SemiBold.ttf in Resources */,
+				A9783540250D1F3A00093E47 /* Quicksand-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

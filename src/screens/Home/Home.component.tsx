@@ -18,10 +18,11 @@ import {
   BottomContainer,
   LocationContainer,
 } from './assets/styles';
+import { NavigationContainer } from '@react-navigation/native';
 
 const LATITUDE_OFFSET = 0;
 
-const Home: React.FC<Props> = ({meals}) => {
+const Home: React.FC<Props> = ({meals, navigation}) => {
   const [filtersVisible, showFiltersModal] = useState(false);
   const [dateTimeVisible, showDateTimeModal] = useState(false);
   const [locationVisible, showLocationModal] = useState(false);
@@ -96,7 +97,7 @@ const Home: React.FC<Props> = ({meals}) => {
               text="3 km"
               subtext="Ninian Road"
               onPress={(): void => {
-                showLocationModal(true);
+                navigation.navigate('Meal');
               }}
             />
           </LocationContainer>

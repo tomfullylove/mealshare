@@ -3,12 +3,12 @@ import {Provider} from 'react-redux';
 
 import store from './redux/store';
 
-import TabNavigation from './navigation/TabNavigation';
+import RootNavigator from './navigation/RootNavigator';
 
 const App: React.FC = () => {
   return (
     <Provider store={store}>
-      <TabNavigation />
+      <RootNavigator />
     </Provider>
   );
 };
