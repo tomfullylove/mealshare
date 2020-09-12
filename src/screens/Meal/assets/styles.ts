@@ -68,5 +68,10 @@ export const BottomContainer = Styled.View`
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
   padding: 16px;
+`;
+
+export const Spacer = Styled.View`
+  width: 16px;
 `;

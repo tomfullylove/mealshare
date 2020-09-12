@@ -18,7 +18,6 @@ import {
   BottomContainer,
   LocationContainer,
 } from './assets/styles';
-import { NavigationContainer } from '@react-navigation/native';
 
 const LATITUDE_OFFSET = 0;
 
