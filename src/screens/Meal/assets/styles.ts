@@ -29,7 +29,6 @@ export const TopContainer = Styled.View`
   align-items: flex-end;
 `;
 
-
 export const TitleContainer = Styled.View`
   display: flex;
   flex-direction: column;
@@ -37,8 +36,9 @@ export const TitleContainer = Styled.View`
 `;
 
 export const Title = Styled.Text`
+  font-family: Quicksand;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 700;
   color: ${colors.white};
 `;
 
@@ -49,8 +49,9 @@ export const RowContainer = Styled.View`
 `;
 
 export const SubTitle = Styled.Text`
+  font-family: Quicksand;
   font-size: 18px;
   color: ${colors.white};
   margin-left: 4px;
-  font-weight: 500;
+  font-weight: 600;
 `;

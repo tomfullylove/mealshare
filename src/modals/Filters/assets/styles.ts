@@ -7,8 +7,9 @@ export const FieldContainer = Styled.View`
 `;
 
 export const FieldTitle = Styled.Text`
+  font-family: Quicksand;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   width: 100%;
   color: ${colors.black};
   padding:0 0 8px 4px;

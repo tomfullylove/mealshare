@@ -21,6 +21,7 @@ export const ScrollContainer = Styled.ScrollView`
 `;
 
 export const Title = Styled.Text`
+  font-family: Quicksand;
   font-weight: 500;
   margin: 0 16px 12px;
   font-size: 16px;

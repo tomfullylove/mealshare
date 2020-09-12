@@ -26,7 +26,8 @@ export const SelectedContainer = Styled.TouchableOpacity<StyledProps>`
 `;
 
 export const Text = Styled.Text<StyledProps>`
+  font-family: Quicksand;
   font-size: ${({small}): number => (small ? 12 : 14)}px;
   color: ${colors.black};
-  font-weight: ${({small}): number => (small ? 400 : 500)};
+  font-weight: 600;
 `;

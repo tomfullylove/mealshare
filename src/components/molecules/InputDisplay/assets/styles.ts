@@ -17,6 +17,7 @@ export const Container = Styled.TouchableOpacity`
 `;
 
 export const Text = Styled.Text`
+  font-family: Quicksand;
   margin-left: 8px;
   font-size: 14px;
   font-weight: 600;
@@ -24,6 +25,7 @@ export const Text = Styled.Text`
 `;
 
 export const Subtext = Styled.Text`
+  font-family: Quicksand;
   margin-left: 6px;
   font-size: 14px;
   font-weight: 600;

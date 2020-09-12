@@ -24,9 +24,10 @@ export const TopContainer = Styled.View`
 `;
 
 export const Title = Styled.Text`
+  font-family: Quicksand;
   padding: 8px 8px 0;
   font-size: 19px;
-  font-weight: 600;
+  font-weight: 700;
   color: ${colors.grey};
 `;
 

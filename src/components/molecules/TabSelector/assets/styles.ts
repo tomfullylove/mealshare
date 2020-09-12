@@ -25,9 +25,10 @@ export const SelectedContainer = Styled.View`
 `;
 
 export const Text = Styled.Text<TextProps>`
+  font-family: Quicksand;
   text-align: center;
-  flex-grow: 1
+  flex-grow: 1;
   font-size: 12px;
   color: ${({selected}): string => selected ? colors.black : colors.black};
-  font-weight: 500;
+  font-weight: 600;
 `;

@@ -6,6 +6,7 @@ interface TextProps {
 }
 
 export const Text = Styled.Text<TextProps>`
+  font-family: Quicksand;
   font-size: ${({textSize}): number => textSize}px;
   color: ${colors.white};
   font-weight: 500;

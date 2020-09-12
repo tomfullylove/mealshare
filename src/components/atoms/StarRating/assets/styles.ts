@@ -9,8 +9,9 @@ export const Container = Styled.View`
 `;
 
 export const Text = Styled.Text`
+  font-family: Quicksand;
   font-size: 16px;
   margin-right: 2px;
   color: ${colors.white};
-  font-weight: 500;
+  font-weight: 700;
 `;

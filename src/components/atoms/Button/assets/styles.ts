@@ -16,7 +16,8 @@ export const Container = Styled.TouchableOpacity`
 `;
 
 export const Text = Styled.Text`
+  font-family: Quicksand;
   font-size: 14px;
   color: ${colors.white};
-  font-weight: 600;
+  font-weight: 700;
 `;

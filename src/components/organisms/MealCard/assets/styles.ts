@@ -36,8 +36,9 @@ export const TitleContainer = Styled.View`
 `;
 
 export const Title = Styled.Text`
+  font-family: Quicksand;
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 700;
   color: ${colors.white};
 `;
 
@@ -48,13 +49,15 @@ export const RowContainer = Styled.View`
 `;
 
 export const SubTitle = Styled.Text`
+  font-family: Quicksand;
   font-size: 16px;
   color: ${colors.white};
   margin-left: 4px;
-  font-weight: 500;
+  font-weight: 600;
 `;
 
 export const Text = Styled.Text`
+  font-family: Quicksand;
   font-size: 12px;
   color: ${colors.white};
   font-weight: 500;
@@ -90,7 +93,8 @@ export const InfoSpacer = Styled.View`
 `;
 
 export const InfoText = Styled.Text`
+  font-family: Quicksand;
   font-size: 11px;
   color: ${colors.black};
-  font-weight: 500;
+  font-weight: 600;
 `;

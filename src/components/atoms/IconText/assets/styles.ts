@@ -12,6 +12,7 @@ export const Icon = Styled.Image`
 `;
 
 export const Text = Styled.Text`
+  font-family: Quicksand;
   font-size: 15px;
   color: ${colors.grey};
 `;
