@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import Home from './Home.component';
+import Screen from './Screen.component';
 
 interface StateProps {
   meals: Array<any>;
@@ -11,4 +11,4 @@ const mapStateToProps = (state): StateProps => ({
   meals: state.meals.allMeals,
 });
 
-export default connect(mapStateToProps)(Home);
+export default connect(mapStateToProps)(Screen);

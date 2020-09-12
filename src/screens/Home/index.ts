@@ -1,3 +1,3 @@
-import Home from './Home.container';
+import Screen from './Screen.container';
 
-export default Home;
+export default Screen;

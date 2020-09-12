@@ -1,3 +1,3 @@
-import Distance from './Distance.component';
+import Modal from './Modal.component';
 
-export default Distance;
+export default Modal;

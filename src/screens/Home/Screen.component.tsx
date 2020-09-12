@@ -2,7 +2,7 @@ import React, {useState, useRef} from 'react';
 
 import MapView, {Marker} from 'react-native-maps';
 
-import {Props} from './Home.container';
+import {Props} from './Screen.container';
 import InputDisplay from '../../components/molecules/InputDisplay';
 import Button from '../../components/atoms/Button';
 import FilterModal from '../../modals/Filters';
@@ -21,7 +21,7 @@ import {
 
 const LATITUDE_OFFSET = 0;
 
-const Home: React.FC<Props> = ({meals, navigation}) => {
+const Screen: React.FC<Props> = ({meals, navigation}) => {
   const [filtersVisible, showFiltersModal] = useState(false);
   const [dateTimeVisible, showDateTimeModal] = useState(false);
   const [locationVisible, showLocationModal] = useState(false);
@@ -126,4 +126,4 @@ const Home: React.FC<Props> = ({meals, navigation}) => {
   );
 };
 
-export default Home;
+export default Screen;

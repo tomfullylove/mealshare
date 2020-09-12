@@ -1,3 +1,3 @@
-import Filters from './Filters.component';
+import Modal from './Modal.component';
 
-export default Filters;
+export default Modal;

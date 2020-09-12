@@ -1,3 +1,3 @@
-import Portion from './Portion.component';
+import Modal from './Modal.component';
 
-export default Portion;
+export default Modal;

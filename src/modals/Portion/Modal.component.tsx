@@ -10,7 +10,7 @@ interface Props {
   visible: boolean;
 }
 
-const Distance: React.FC<Props> = ({visible, close}) => {
+const Modal: React.FC<Props> = ({visible, close}) => {
   return (
     <SlideUp
       visible={visible}
@@ -27,4 +27,4 @@ const Distance: React.FC<Props> = ({visible, close}) => {
   );
 };
 
-export default Distance;
+export default Modal;

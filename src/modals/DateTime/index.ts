@@ -1,3 +1,3 @@
-import DateTime from './DateTime.component';
+import Modal from './Modal.component';
 
-export default DateTime;
+export default Modal;

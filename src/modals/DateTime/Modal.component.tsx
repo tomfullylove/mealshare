@@ -9,7 +9,7 @@ interface Props {
   visible: boolean;
 }
 
-const DateTime: React.FC<Props> = ({visible, close}) => {
+const Modal: React.FC<Props> = ({visible, close}) => {
   return (
     <SlideUp
       visible={visible}
@@ -24,4 +24,4 @@ const DateTime: React.FC<Props> = ({visible, close}) => {
   );
 };
 
-export default DateTime;
+export default Modal;
