@@ -29,6 +29,6 @@ export const Text = Styled.Text<TextProps>`
   text-align: center;
   flex-grow: 1;
   font-size: 12px;
-  color: ${({selected}): string => selected ? colors.black : colors.black};
+  color: ${colors.black};
   font-weight: 600;
 `;

@@ -97,7 +97,7 @@ const Home: React.FC<Props> = ({meals, navigation}) => {
               text="3 km"
               subtext="Ninian Road"
               onPress={(): void => {
-                navigation.navigate('Meal');
+                showDateTimeModal(true);
               }}
             />
           </LocationContainer>
@@ -105,6 +105,9 @@ const Home: React.FC<Props> = ({meals, navigation}) => {
             listRef={mealList}
             meals={meals}
             setFocusedMeal={(meal) => setFocusedMeal(meal, true, false)}
+            showMeal={(mealID) => {
+              navigation.navigate('Meal');
+            }}
           />
         </BottomContainer>
       </Container>

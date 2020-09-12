@@ -8,12 +8,14 @@ interface Props {
   listRef: React.RefObject<any>;
   meals: any;
   setFocusedMeal: (meal) => void;
+  showMeal: (arg0: any) => void;
 }
 
 const List = React.forwardRef((props, ref) => {
   const renderItem = ({item}) => {
     return (
       <MealCard
+        onPress={() => props.showMeal(item)}
         key={item.id}
         name={item.title}
         portions={item.portions}
@@ -42,8 +44,20 @@ const List = React.forwardRef((props, ref) => {
   );
 });
 
-const AllItems: React.FC<Props> = ({meals, listRef, setFocusedMeal}) => {
-  return <List ref={listRef} meals={meals} setFocusedMeal={setFocusedMeal} />;
+const AllItems: React.FC<Props> = ({
+  meals,
+  listRef,
+  setFocusedMeal,
+  showMeal,
+}) => {
+  return (
+    <List
+      ref={listRef}
+      meals={meals}
+      setFocusedMeal={setFocusedMeal}
+      showMeal={showMeal}
+    />
+  );
 };
 
 export default AllItems;

@@ -2,11 +2,12 @@ import Styled from 'styled-components/native';
 import LinearGradient from 'react-native-linear-gradient';
 import colors from '../../../utils/colors';
 
+export const Container = Styled.View`
+  display: flex;
+  flex-direction: column;
+`;
+
 export const Image = Styled.ImageBackground`
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   height: 45%;
   display: flex;
   flex-direction: column;
@@ -54,4 +55,18 @@ export const SubTitle = Styled.Text`
   color: ${colors.white};
   margin-left: 4px;
   font-weight: 600;
+`;
+
+export const Content = Styled.SafeAreaView`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 55%;
+`;
+
+export const BottomContainer = Styled.View`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 16px;
 `;

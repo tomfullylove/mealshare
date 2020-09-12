@@ -24,9 +24,11 @@ interface Props {
   portions: number;
   price: number;
   distance: number;
+  onPress: () => void;
 }
 
 const MealCard: React.FC<Props> = ({
+  onPress,
   name,
   rating,
   portions,
@@ -34,7 +36,7 @@ const MealCard: React.FC<Props> = ({
   distance,
 }) => {
   return (
-    <Container>
+    <Container onPress={onPress}>
       <Image source={require('../../../assets/food.jpg')}>
         <Backdrop colors={['rgba(0, 0, 0, 0.1)', 'rgba(0, 0, 0, 1)']} />
         <TitleContainer>
