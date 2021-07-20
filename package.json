@@ -26,7 +26,7 @@
     "enzyme-to-json": "^3.5.0",
     "react": "16.13.1",
     "react-dom": "^16.13.1",
-    "react-native": "0.63.2",
+    "react-native": "0.64.1",
     "react-native-gesture-handler": "^1.8.0",
     "react-native-linear-gradient": "^2.5.6",
     "react-native-maps": "^0.27.1",
